@@ -1,0 +1,33 @@
+.Loader {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+    background: white;
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 8px solid rgba(black, 0.2);
+        border-top: 8px solid black;
+
+        animation: spin 0.8s infinite linear;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
